@@ -1,0 +1,57 @@
+.jumbotron{
+	background-image: url("../images/trivia2.png");
+	color: white;
+}
+
+body{
+	background-color: #D3D3D3;
+}
+
+.panel-default > .panel-heading {
+  background-color: #b6eef6; 
+}
+
+#start{
+	margin-bottom: 25px;
+}
+#hidden{
+	display: none;
+}
+
+#timer {
+	display: none;
+}
+
+#results{
+	display: none;
+}
+
+#timerText{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#picTriv{
+	width: 101%;
+}
+
+footer{
+	height: 50px;
+	margin-top: 100px;
+}
+
+#timeUp{
+	font-weight: bold;
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+
+#wrong{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#correct{
+	font-weight: bold;
+	font-size: 25px;
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia Game!</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="jumbotron">
+  <h1 class="text-center">Trivia Game!</h1>
+  <h3 class="text-center">Guess the Answer to the Questions Below <br> ---------------------------------------------------</h3>
+</div>
+<!-- Bootstrap Container to contain Start Button, Image, and Timer -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center">
+		<button type="button" id="start" class="btn btn-success btn-large">Click HERE to Start the Game!</button>
+		</div>
+	</div>
+
+	<div>
+		<img src="assets/images/pictriv.png" id="picTriv" class="img-fluid" alt="Responsive image">
+	</div>
+
+	<div class="row" id="timer">
+	<div class="col-md-2 col-md-offset-5 text-center">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h2 class="panel-title">Time Remaining</h2>
+		</div>
+			<div class="panel-body" id="timerText">
+			80
+			</div>
+		</div>
+	</div>
+	</div>
+</div> <!-- End of 1st Container -->
+
+<!-- Bootstrap Container to contain questions and answers -->
+<div class="container" id="hidden">
+
+	<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h2 class="panel-title">Question #1: What is the name of the actress who plays Hermione Granger in the Harry Potter series of films? </h2>
+		</div>
+			<div id="questionOne" class="panel-body">
+				<form action="">
+					<input type="radio" name="triviaOne" value="wrongOne"> Natalie Stone <br>
+					<input type="radio" name="triviaOne" value="correctOne"> Emma Watson <br>
+					<input type="radio" name="triviaOne" value="wrongOne"> Kate Mara <br>
+					<input type="radio" name="triviaOne" value="wrongOne"> Julianne Hough <br>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h2 class="panel-title">Question #2: In Disney's "The Little Mermaid" what is the name of the human that Ariel falls in love with? </h2>
+		</div>
+			<div id="questionOne" class="panel-body">
+				<form action="">
+					<input type="radio" name="triviaTwo" value="wrongTwo"> Prince George <br>
+					<input type="radio" name="triviaTwo" value="wrongTwo"> Prince Steven <br>
+					<input type="radio" name="triviaTwo" value="correctTwo"> Prince Eric <br>
+					<input type="radio" name="triviaTwo" value="wrongTwo"> Prince John <br>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h2 class="panel-title">Question #3: Which planet in our solar system has the most oxygen? </h2>
+		</div>
+			<div id="questionOne" class="panel-body">
+				<form action="">
+					<input type="radio" name="triviaThree" value="wrongThree"> Jupiter <br>
+					<input type="radio" name="triviaThree" value="wrongThree"> Mars <br>
+					<input type="radio" name="triviaThree" value="correctThree"> Earth <br>
+					<input type="radio" name="triviaThree" value="wrongThree"> Saturn <br>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h2 class="panel-title">Question #4: How many planets in our solar system have moons? </h2>
+		</div>
+			<div id="questionOne" class="panel-body">
+				<form action="">
+					<input type="radio" name="triviaFour" value="wrongFour"> 1 <br>
+					<input type="radio" name="triviaFour" value="correctFour"> 6 <br>
+					<input type="radio" name="triviaFour" value="wrongFour"> 3 <br>
+					<input type="radio" name="triviaFour" value="wrongFour"> 4 <br>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h2 class="panel-title">Question #5: Which inventor is generally given credit for the discovery of electricity? </h2>
+		</div>
+			<div id="questionOne" class="panel-body">
+				<form action="">
+					<input type="radio" name="triviaFive" value="wrongFive"> Thomas Edison <br>
+					<input type="radio" name="triviaFive" value="wrongFive"> Nikola Tesla <br>
+					<input type="radio" name="triviaFive" value="correctFive"> Benjamin Franklin <br>
+					<input type="radio" name="triviaFive" value="wrongFive"> Georg Ohm <br>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h2 class="panel-title">Question #6: Jimmy Carter was the first U.S. president born in a what? </h2>
+		</div>
+			<div id="questionOne" class="panel-body">
+				<form action="">
+					<input type="radio" name="triviaSix" value="correctSix"> Hospital <br>
+					<input type="radio" name="triviaSix" value="wrongSix"> Movie Theater <br>
+					<input type="radio" name="triviaSix" value="wrongSix"> Barn <br>
+					<input type="radio" name="triviaSix" value="wrongSix"> Car <br>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h2 class="panel-title">Question #7: In humans, what is the only internal organ capable of regenerating lost tissue? </h2>
+		</div>
+			<div id="questionOne" class="panel-body">
+				<form action="">
+					<input type="radio" name="triviaSeven" value="wrongSeven"> Heart <br>
+					<input type="radio" name="triviaSeven" value="correctSeven"> Liver <br>
+					<input type="radio" name="triviaSeven" value="wrongSeven"> Lungs <br>
+					<input type="radio" name="triviaSeven" value="wrongSeven"> Kidney <br>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h2 class="panel-title">Question #8: Approximately 2% of all people have what eye color? </h2>
+		</div>
+			<div id="questionOne" class="panel-body">
+				<form action="">
+					<input type="radio" name="triviaEight" value="correctEight"> Green <br>
+					<input type="radio" name="triviaEight" value="wrongEight"> Blue <br>
+					<input type="radio" name="triviaEight" value="wrongEight"> Yellow <br>
+					<input type="radio" name="triviaEight" value="wrongEight"> Brown <br>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h2 class="panel-title">Question #9: Which is the most abundant metal in the earth's crust? </h2>
+		</div>
+			<div id="questionOne" class="panel-body">
+				<form action="">
+					<input type="radio" name="triviaNine" value="wrongNine"> Iron <br>
+					<input type="radio" name="triviaNine" value="wrongNine"> Copper <br>
+					<input type="radio" name="triviaNine" value="wrongNine"> Silver <br>
+					<input type="radio" name="triviaNine" value="correctNine"> Aluminum <br>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h2 class="panel-title">Question #10: In 1867 the United States purchased Alaska from what country?</h2>
+		</div>
+			<div id="questionOne" class="panel-body">
+				<form action="">
+					<input type="radio" name="triviaTen" value="wrongTen"> Spain <br>
+					<input type="radio" name="triviaTen" value="correctTen"> Russia <br>
+					<input type="radio" name="triviaTen" value="wrongTen"> Britain <br>
+					<input type="radio" name="triviaTen" value="wrongTen"> Japan <br>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12 text-center">
+		<button type="button" id="submit" class="btn btn-success btn-large">Submit Answers</button>
+		</div>
+	</div>
+
+</div> <!--End of Container id hidden Div -->
+
+<div class="container" id="results">
+
+	<div class="col-md-2 col-md-offset-5 text-center ">
+		<div class="panel-body" id="timeUp">
+				Time's Up!
+		</div>
+	</div>
+
+<div class="row">
+	<div class="col-md-2 col-md-offset-5 text-center">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h2 class="panel-title">Correct Answers</h2>
+		</div>
+			<div id="correct" class="panel-body">
+				0
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-2 col-md-offset-5 text-center">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h2 class="panel-title">Wrong Answers</h2>
+		</div>
+			<div id="wrong" class="panel-body">
+				0
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</div> <!--End of Results Container-->
+
+<footer>
+    <div class="container">
+       <p class="text-center">Created by Matthew McConaghie - Copyright &copy; 2017</p>
+    </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+
+</body>
+</html>
